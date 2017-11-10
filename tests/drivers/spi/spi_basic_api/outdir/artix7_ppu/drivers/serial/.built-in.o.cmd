@@ -1,0 +1,1 @@
+cmd_drivers/serial/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o drivers/serial/built-in.o drivers/serial/uart_ns16550.o 

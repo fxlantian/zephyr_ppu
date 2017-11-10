@@ -1,0 +1,109 @@
+if SOC_RISCV32_PPU
+
+config SOC
+	string
+	default "ppu"
+
+config SYS_CLOCK_HW_CYCLES_PER_SEC
+	int
+	default 50000000
+
+config RISCV_SOC_CONTEXT_SAVE
+	bool
+	default y
+
+config RISCV_SOC_INTERRUPT_INIT
+	bool
+	default y
+
+config RISCV_HAS_CPU_IDLE
+	bool
+	default y
+
+config INCLUDE_RESET_VECTOR
+	bool
+	default y
+
+config NUM_IRQS
+	int
+	default 32
+
+config ITCM_BASE_ADDRESS
+	hex
+	default	0x50000000
+#	default	0x26000000
+
+config ITCM_SIZE
+	hex
+	default 0x800000
+
+config DTCM_BASE_ADDRESS
+	hex
+	default 0x51000000
+#	default 0x26800000
+
+config DTCM_SIZE
+	hex
+	default 0x800000
+
+if UART_NS16550
+
+config UART_NS16550_PCI
+	bool
+	default n
+
+config UART_NS16750
+	bool
+	default y
+
+config UART_NS16550_PORT_0
+	bool
+	default y
+
+config UART_NS16550_PORT_1
+	bool
+	default n
+
+if UART_NS16550_PORT_0
+
+config UART_NS16550_PORT_0_NAME
+	string
+	default "UART_0"
+
+config UART_NS16550_PORT_0_IRQ_PRI
+	int
+	default 0
+
+config UART_NS16550_PORT_0_BAUD_RATE
+	int
+	default 115200
+
+config UART_NS16550_PORT_0_OPTIONS
+	int
+	default 0
+
+endif # UART_NS16550_PORT_0
+
+if UART_NS16550_PORT_1
+
+config UART_NS16550_PORT_1_NAME
+	string
+	default "UART_1"
+
+config UART_NS16550_PORT_1_IRQ_PRI
+	int
+	default 0
+
+config UART_NS16550_PORT_1_BAUD_RATE
+	int
+	default 115200
+
+config UART_NS16550_PORT_1_OPTIONS
+	int
+	default 0
+
+endif # UART_NS16550_PORT_1
+
+endif # UART_NS16550
+
+endif # SOC_RISCV32_PPU

@@ -1,0 +1,1 @@
+cmd_subsys/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o subsys/built-in.o subsys/bluetooth/built-in.o subsys/net/built-in.o subsys/logging/built-in.o subsys/debug/built-in.o 

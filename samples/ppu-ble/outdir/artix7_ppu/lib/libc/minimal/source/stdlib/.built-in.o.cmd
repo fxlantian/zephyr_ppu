@@ -1,0 +1,1 @@
+cmd_lib/libc/minimal/source/stdlib/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o lib/libc/minimal/source/stdlib/built-in.o lib/libc/minimal/source/stdlib/strtol.o lib/libc/minimal/source/stdlib/strtoul.o lib/libc/minimal/source/stdlib/atoi.o 

@@ -1,0 +1,1 @@
+cmd_drivers/timer/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o drivers/timer/built-in.o drivers/timer/ppu_timer.o drivers/timer/sys_clock_init.o 

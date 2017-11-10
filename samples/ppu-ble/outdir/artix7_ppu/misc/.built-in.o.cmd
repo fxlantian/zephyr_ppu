@@ -1,0 +1,1 @@
+cmd_misc/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o misc/built-in.o misc/printk.o misc/generated/built-in.o 

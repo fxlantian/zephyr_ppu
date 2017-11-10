@@ -1,0 +1,1 @@
+cmd_boards/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o boards/built-in.o boards/riscv32/artix7_ppu/built-in.o 

@@ -1,0 +1,1 @@
+cmd_subsys/bluetooth/host/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o subsys/bluetooth/host/built-in.o subsys/bluetooth/host/uuid.o subsys/bluetooth/host/hci_core.o subsys/bluetooth/host/crypto.o 

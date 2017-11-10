@@ -1,0 +1,112 @@
+cmd_misc/generated/configs.o := /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-gcc -Wp,-MD,misc/generated/.configs.o.d  -nostdinc -isystem /home/riscv/ri5cy_gnu_toolchain/install/lib/gcc/riscv32-unknown-elf/5.2.0/include -isystem /home/riscv/ri5cy_gnu_toolchain/install/lib/gcc/riscv32-unknown-elf/5.2.0/include-fixed -I/home/riscv/zephyr/kernel/include -I/home/riscv/zephyr/arch/riscv32/include -I/home/riscv/zephyr/arch/riscv32/soc/ppu -I/home/riscv/zephyr/boards/riscv32/artix7_ppu  -I/home/riscv/zephyr/include -I/home/riscv/zephyr/include -I/home/riscv/zephyr/tests/drivers/spi/spi_basic_api/outdir/artix7_ppu/include/generated -include /home/riscv/zephyr/tests/drivers/spi/spi_basic_api/outdir/artix7_ppu/include/generated/autoconf.h  -I/home/riscv/zephyr/lib/libc/minimal/include  -I/home/riscv/zephyr/misc/generated -Imisc/generated -DKERNEL -D__ZEPHYR__=1 -c -g -std=c99 -Wall -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -Wno-format-zero-length -Wno-main -ffreestanding -Os -fno-asynchronous-unwind-tables -fno-stack-protector -ffunction-sections -fdata-sections   -I//home/riscv/zephyr/arch/riscv32/soc/ppu/ -march=IMXpulpv2 -Wno-unused-but-set-variable -fno-reorder-functions -fno-defer-pop -Wno-pointer-sign -fno-strict-overflow -Werror=implicit-int    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(configs)"  -D"KBUILD_MODNAME=KBUILD_STR(configs)" -c -o misc/generated/configs.o misc/generated/configs.c
+
+source_misc/generated/configs.o := misc/generated/configs.c
+
+deps_misc/generated/configs.o := \
+    $(wildcard include/config/uart/console/on/dev/name.h) \
+    $(wildcard include/config/num/preempt/priorities.h) \
+    $(wildcard include/config/num/coop/priorities.h) \
+    $(wildcard include/config/ztest/stacksize.h) \
+    $(wildcard include/config/spi/0/irq/pri.h) \
+    $(wildcard include/config/kernel/bin/name.h) \
+    $(wildcard include/config/printk.h) \
+    $(wildcard include/config/multithreading.h) \
+    $(wildcard include/config/arch.h) \
+    $(wildcard include/config/console/input/max/line/len.h) \
+    $(wildcard include/config/riscv/soc/interrupt/init.h) \
+    $(wildcard include/config/uart/ns16550/port/0/options.h) \
+    $(wildcard include/config/serial/has/driver.h) \
+    $(wildcard include/config/spi/0/name.h) \
+    $(wildcard include/config/num/pipe/async/msgs.h) \
+    $(wildcard include/config/spi.h) \
+    $(wildcard include/config/console/has/driver.h) \
+    $(wildcard include/config/timeslice/size.h) \
+    $(wildcard include/config/atomic/operations/c.h) \
+    $(wildcard include/config/arch/defconfig.h) \
+    $(wildcard include/config/uart/ns16550.h) \
+    $(wildcard include/config/sys/clock/hw/cycles/per/sec.h) \
+    $(wildcard include/config/riscv32.h) \
+    $(wildcard include/config/num/mbox/async/msgs.h) \
+    $(wildcard include/config/test/extra/stacksize.h) \
+    $(wildcard include/config/boot/banner.h) \
+    $(wildcard include/config/uart/ns16550/port/0/name.h) \
+    $(wildcard include/config/include/reset/vector.h) \
+    $(wildcard include/config/spi/legacy/api.h) \
+    $(wildcard include/config/spi/init/priority.h) \
+    $(wildcard include/config/timeslicing.h) \
+    $(wildcard include/config/timeslice/priority.h) \
+    $(wildcard include/config/compiler/opt.h) \
+    $(wildcard include/config/coop/enabled.h) \
+    $(wildcard include/config/ztest.h) \
+    $(wildcard include/config/early/console.h) \
+    $(wildcard include/config/spi/ppu.h) \
+    $(wildcard include/config/toolchain/variant.h) \
+    $(wildcard include/config/idle/stack/size.h) \
+    $(wildcard include/config/gen/irq/start/vector.h) \
+    $(wildcard include/config/system/workqueue/stack/size.h) \
+    $(wildcard include/config/board.h) \
+    $(wildcard include/config/priority/ceiling.h) \
+    $(wildcard include/config/console.h) \
+    $(wildcard include/config/spi/0/default/cfg.h) \
+    $(wildcard include/config/spi/0.h) \
+    $(wildcard include/config/riscv/soc/context/save.h) \
+    $(wildcard include/config/heap/mem/pool/size.h) \
+    $(wildcard include/config/dtcm/size.h) \
+    $(wildcard include/config/itcm/base/address.h) \
+    $(wildcard include/config/itcm/size.h) \
+    $(wildcard include/config/isr/stack/size.h) \
+    $(wildcard include/config/gpio.h) \
+    $(wildcard include/config/sys/clock/exists.h) \
+    $(wildcard include/config/riscv/has/cpu/idle.h) \
+    $(wildcard include/config/ppu/timer.h) \
+    $(wildcard include/config/serial.h) \
+    $(wildcard include/config/application/init/priority.h) \
+    $(wildcard include/config/uart/ns16550/port/0/irq/pri.h) \
+    $(wildcard include/config/build/timestamp.h) \
+    $(wildcard include/config/offload/workqueue/stack/size.h) \
+    $(wildcard include/config/uart/console/init/priority.h) \
+    $(wildcard include/config/errno.h) \
+    $(wildcard include/config/offload/workqueue/priority.h) \
+    $(wildcard include/config/uart/ns16750.h) \
+    $(wildcard include/config/num/irqs.h) \
+    $(wildcard include/config/board/artix7/ppu.h) \
+    $(wildcard include/config/preempt/enabled.h) \
+    $(wildcard include/config/sys/clock/ticks/per/sec.h) \
+    $(wildcard include/config/dtcm/base/address.h) \
+    $(wildcard include/config/kernel/init/priority/default.h) \
+    $(wildcard include/config/system/workqueue/priority.h) \
+    $(wildcard include/config/gpio/ppu.h) \
+    $(wildcard include/config/main/stack/size.h) \
+    $(wildcard include/config/kernel/init/priority/device.h) \
+    $(wildcard include/config/uart/ns16550/port/0.h) \
+    $(wildcard include/config/serial/support/interrupt.h) \
+    $(wildcard include/config/ztest/assert/verbose.h) \
+    $(wildcard include/config/system/clock/init/priority.h) \
+    $(wildcard include/config/soc/riscv32/ppu.h) \
+    $(wildcard include/config/kernel/init/priority/objects.h) \
+    $(wildcard include/config/spi/0/default/baud/rate.h) \
+    $(wildcard include/config/gen/isr/tables.h) \
+    $(wildcard include/config/text/section/offset.h) \
+    $(wildcard include/config/main/thread/priority.h) \
+    $(wildcard include/config/uart/ns16550/port/0/baud/rate.h) \
+    $(wildcard include/config/gen/sw/isr/table.h) \
+    $(wildcard include/config/cross/compile.h) \
+    $(wildcard include/config/soc.h) \
+    $(wildcard include/config/uart/console.h) \
+    $(wildcard include/config/sys/log/ieee802154/driver/level.h) \
+    $(wildcard include/config/mem/pool/split/before/defrag.h) \
+  /home/riscv/zephyr/include/toolchain.h \
+  /home/riscv/zephyr/include/toolchain/gcc.h \
+    $(wildcard include/config/arm.h) \
+    $(wildcard include/config/isa/thumb.h) \
+    $(wildcard include/config/isa/thumb2.h) \
+    $(wildcard include/config/isa/arm.h) \
+    $(wildcard include/config/nios2.h) \
+    $(wildcard include/config/xtensa.h) \
+    $(wildcard include/config/arc.h) \
+    $(wildcard include/config/x86.h) \
+  /home/riscv/zephyr/include/toolchain/common.h \
+
+misc/generated/configs.o: $(deps_misc/generated/configs.o)
+
+$(deps_misc/generated/configs.o):

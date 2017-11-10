@@ -1,0 +1,1 @@
+cmd_drivers/console/built-in.o :=  /home/riscv/ri5cy_gnu_toolchain/install/bin/riscv32-unknown-elf-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o drivers/console/built-in.o drivers/console/uart_console.o 
